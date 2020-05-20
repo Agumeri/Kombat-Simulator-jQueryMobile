@@ -5,6 +5,6 @@ Kombat Simulator será una aplicación disponible tanto para dispositivos Androi
 
 
 
-#### Practica 4 de Desarrollo del Software realizada por:
+#### Practica final de Desarrollo del Software realizada por:
 * Rubén Delgado Pareja
 * Agustín Mérida Gutiérrez
