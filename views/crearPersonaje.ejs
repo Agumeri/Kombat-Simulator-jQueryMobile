@@ -1,0 +1,94 @@
+<html>
+<head>
+    <TITLE>Kombat Simulator</TITLE>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <!-- Estos tres links aportan todo el css que vamos a utilizar. Se exportan themas clasicos que las 
+         versiones más modernas no tienen, ya que estas ultimas solo tienen tema claro y oscur (light/dark) -->                                                                                                         
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+    <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+
+    <!-- Estos dos links aportan todo el javascript que podemos obtener de jqueryMobile -->
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+
+        <!-- Header -->
+        <div data-role="header" data-position="fixed">
+            <h1>Kombat Simulator</h1>
+            <h3>Another D&D tracker</h3>
+        </div>
+
+        <!-- Content -->
+        <div data-role="content">
+            <h2>Añadir un personaje</h2>
+            <form action="/personaje/add-personaje" method="POST">
+                <div data-role="fieldcontain">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Puntos de Vida: </label>
+                    <input type="text" name="vida" value=" " required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">CA: </label>
+                    <input type="text" name="CA" value="">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Iniciativa: </label>
+                    <input type="text" name="iniciativa" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Velocidad: </label>
+                    <input type="text" name="velocidad" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Fuerza: </label>
+                    <input type="text" name="fuerza" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Destreza: </label>
+                    <input type="text" name="destreza" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Constitución: </label>
+                    <input type="text" name="constitucion" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Inteligencia: </label>
+                    <input type="text" name="inteligencia" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Sabiduría: </label>
+                    <input type="text" name="sabiduria" value="" required="true">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="nombre">Carisma: </label>
+                    <input type="text" name="carisma" value="" required="true">
+                </div>
+                <div>
+                    <input data-role="button" type="submit" value="Aceptar"></input>
+                </div>
+            </form>
+
+        </div>
+
+
+        <div data-role="footer">
+            <form action="/" method="GET">
+                <button type="submit">Atras</button>
+            </form>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

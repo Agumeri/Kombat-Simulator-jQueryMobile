@@ -1,0 +1,86 @@
+
+
+<html>
+    <head>
+        <TITLE>Kombat Simulator</TITLE>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+        <!-- Estos tres links aportan todo el css que vamos a utilizar. Se exportan themas clasicos que las
+             versiones más modernas no tienen, ya que estas ultimas solo tienen tema claro y oscur (light/dark) -->
+        <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+
+        <!-- Estos dos links aportan todo el javascript que podemos obtener de jqueryMobile -->
+        <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+
+    <body>
+        <div data-role="page">
+
+            <!-- Header -->
+            <div data-role="header" data-position="fixed">
+                <h1>Kombat Simulator</h1>
+                <h3>Another D&D tracker</h3>
+            </div>
+
+            <!-- Content -->
+            <div data-role="content">
+
+
+                <% personaje.forEach(function (personaje) { %>
+                    <% if (personaje.turno == true){ %>
+                        <div data-role="collapsible" data-theme="b">
+                    <% }else { %>
+                        <div data-role="collapsible" data-theme="a">
+                    <% } %>
+                <h3><%= personaje.nombre %>: <%= personaje.vida %>HP <%= personaje.CA %>CA <%= personaje.iniciativa %>INI  <%= personaje.velocidad %>VEL</h3>
+                <form action="/personaje/delete/<%= personaje.id %>" method="GET">
+                    <ul data-role="listview" data-inset="true">
+                        <li>FUE: <%= personaje.fuerza %></li>
+                        <li>DES: <%= personaje.destreza %></li>
+                        <li>CON: <%= personaje.constitucion %></li>
+                        <li>INT: <%= personaje.inteligencia %></li>
+                        <li>SAB: <%= personaje.sabiduria %></li>
+                        <li>CAR: <%= personaje.carisma %></li>
+                    </ul>
+                    <button  data-inline="true" type="sumbit">Eliminar Personaje</button>
+                </form>
+                <form action="/personaje/changeHP/<%= personaje.id %>" method="POST">
+                    <label for="Descripcion">Sumar/restar vida</label>
+                    <input type="number" name="nuevaVida" value="" required="true">
+                    <button  data-inline="true" type="sumbit">Cambiar vida</button>
+                </form>
+                </div>
+                <% }) %>
+                <% personaje.forEach(function (personaje) { %>
+                    <% if (personaje.turno == true){ %>
+                        <form action="/personaje/updatesig/<%= personaje.id %>" method="GET">
+                            <button style="float:right"class=" ui-btn ui-icon-arrow-r ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</button>
+                        </form>
+                        <form action="/personaje/updateant/<%= personaje.id %>" method="GET">
+                            <button style="float:left" class=" ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all ui-btn-inline">No text</button>
+                        </form>
+                    <% } %>
+                <% }) %>
+
+            </div>
+
+
+
+
+
+            <div class="ui-grid-a"  data-role="footer" data-position="fixed" style="bottom: 0;">
+                <form class="ui-block-a" action="/personaje" method="GET">
+                    <input data-role="button" type="submit" value="Añadir Personaje"></input>
+                </form>
+                <form  style="float: right;" class ="ui-block-c" action="/informacion" method="GET" >
+                    <input  data-role="button" type="submit" value="Información adicional"></input>
+                </form>
+            </div>
+
+        </div>
+    </body>
+
+</html>
