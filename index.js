@@ -18,9 +18,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(bodyParser.text({ type: 'text/html' }));
+
 //Importamos rutas
-const postsRoute = require('./routes/posts');
-app.use('/posts', postsRoute);
 const personajeRoute = require('./routes/personaje');
 app.use('/personaje', personajeRoute);
 
