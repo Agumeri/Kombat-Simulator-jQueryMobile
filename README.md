@@ -48,6 +48,19 @@ A continuación, se explicará brevemente que es lo que se puede hacer con la ve
   
 <img src="img/turnos.png" width="600" >
 
+* **Página informativa**
+  En la página principal, en la esquina inferior derecha hay un botón que al pulsarlo te envía a una página informativa, la cual explica de que trata la aplicación y cuales son las funciones que se pueden realizar con esta (un breve resumen).
+  Además, hay dos enlaces, uno que corresponde al correo que se utilizará para obtener la retrospectiva por parte de los usuarios de la aplicación, y otro que es un botón de donaciones por si estos quieren donar algo a los desarrolladores de la app.
+  
+ <img src="img/infoextra.png">
+
+##### Donaciones
+  Si os ha convencido la aplicación y os sobra dinero, podeis donar un euro a los creadores a través del siguiente enlace:
+  
+  [**Donar**](https://www.youtube.com/watch?v=9CENFPSJwCI)
+  
+  
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 #### Practica final de Desarrollo del Software realizada por:
