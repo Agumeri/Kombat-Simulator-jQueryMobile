@@ -25,6 +25,13 @@ Para más información acerca de **jquery Mobile**, acceded al siguiente reposit
 ### Tecnologías utilizadas para la creación de una API REST
 
 * [**Node js**](https://nodejs.org/es/docs/)
+  * body-parser
+  * cors
+  * dotenv
+  * ejs-mate
+  * jquery
+  * jsdom
+  * mongoose
 * [**Express**](https://expressjs.com/es/)
 * [**MongoDB**](https://github.com/Agumeri/Curso-MongoDB)
 
