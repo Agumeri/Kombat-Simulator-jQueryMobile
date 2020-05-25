@@ -25,13 +25,12 @@ Para más información acerca de **jquery Mobile**, acceded al siguiente reposit
 ### Tecnologías utilizadas para la creación de una API REST
 
 * [**Node js**](https://nodejs.org/es/docs/)
-  * body-parser
-  * cors
-  * dotenv
-  * ejs-mate
-  * jquery
-  * jsdom
-  * mongoose
+  * body-parser: Middleware para parsear el cuerpo del request
+  * cors: Paquete middleware que proporciona conexion 
+  * dotenv: Paquete con 0 dependencias que aporta seguridad permitiendo acceso a archivos .env
+  * ejs-mate: Paquete que implementar un motor de plantillas donde se escribe el html
+  * jquery: Paquete incluye la biblioteca jquery de javascript
+  * mongoose: Paquete que ayuda a la conexión con la base de datos de MongoDB
 * [**Express**](https://expressjs.com/es/)
 * [**MongoDB**](https://github.com/Agumeri/Curso-MongoDB)
 
