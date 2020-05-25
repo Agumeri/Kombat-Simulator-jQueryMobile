@@ -17,9 +17,38 @@ La versión inicial ha sido diseñada centrandose principalmente en la versión 
 <img src="img/version_movil.png" width="300" height="500">
 
 * **Aplicación en navegadores**
+
 ![web](img/version_web.png)
 
 Para más información acerca de **jquery Mobile**, acceded al siguiente repositorio el cual sirve de guía introductoria para empezar a utilizar el framework: https://github.com/Agumeri/Curso-jQuery-Mobile
+
+### Tecnologías utilizadas para la creación de una API REST
+
+* [**Node js**](https://nodejs.org/es/docs/)
+* [**Express**](https://expressjs.com/es/)
+* [**MongoDB**](https://github.com/Agumeri/Curso-MongoDB)
+
+
+## Uso de Kombat Simulator.
+
+A continuación, se explicará brevemente que es lo que se puede hacer con la versión inicial de la aplicación:
+
+* **Añadir personajes**
+  Como se vio en las imagenes anteriores, correspondientes a la página principal de la app, hay un botón en el que pone *Añadir personaje*. Si se pulsa, llevará al usuario a otra página con un simple formulario a rellenar, y tras rellenarlo, se deberá pulsar el botón de *Aceptar* (Además esta página tiene abajo el botón *Atras* para volver a la página principal. Los personajes en la página principal estarán ordenados en todo momento de mayor a menor según la iniciativa de estos. El formulario en cuestion es el siguiente: 
+
+![form](img/formulario.png)
+
+* **Acceder y modificar a la información de los personajes**
+  Una vez añadidos los personajes, saldrán en la página inicial como se puede ver en la imagen del apartado *Aplicación en dispositivos moviles*. Por defecto, se mostrará el nombre de cada personaje, su vida (HP), su armadura (CA), su iniciativa (INI) y velocidad (VEL). Si queremos saber el resto de información de estos, basta con pulsar en cada uno, y activará un desplegable con el resto de información, además de dos funciones a realizar por cada personaje, eliminarlo, y modificar su vida (esta modificación dependerá ya del usuario, la función en si solo suma vida, siendo esta positiva o negativa): 
+  
+![info](img/infoPersonaje.png)
+
+* **Pasar turnos**
+  La aplicación una vez se introduzcan uno o más personajes, indica a cual de ellos les corresponde el turno. Además, hay dos botones que sirven para "pasar" o "retroceder" turno. Si se eliminase el personaje que tenga el turno, se le atribuirá el turno al personaje que tendría el turno después de él.
+  
+<img src="img/turnos.png" width="600" >
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 #### Practica final de Desarrollo del Software realizada por:
 * Rubén Delgado Pareja
